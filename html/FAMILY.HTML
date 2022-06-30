@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY SWEET FAMILY</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+            font-style: oblique;
+            font-feature-settings: "cjct";
+        }
+
+        .family {
+            width: 900px;
+            border: 3px solid purple;
+            border-radius: 150PX;
+            padding: 25px 34px 50px 34px;
+            background-image: url("https://user-images.githubusercontent.com/106741114/171988593-77051561-03a7-403c-b352-ae25734e8251.jpeg");
+            margin: 70px auto;
+        }
+
+        #imgpapa {
+            float: left;
+            width: 18%;
+            border: 5px solid cyan;
+            border-radius: 150px;
+            display: block;
+            margin: auto;
+        }
+
+        .imgpapa img {
+            float: left;
+            clear: both;
+            width: 15%;
+            height: 130px;
+            border: 5px solid darkolivegreen;
+            border-radius: 33px;
+        }
+
+        .imgpapa1 img {
+            float: right;
+            clear: right;
+            width: 15%;
+            height: 130px;
+            border: 5px solid darkolivegreen;
+            border-radius: 35px;
+        }
+
+        .imgpm img {
+            float: left;
+            clear: both;
+            width: 15%;
+            height: 165px;
+            border: 5px solid darkolivegreen;
+            border-radius: 33px;
+        }
+
+        .imgpm1 img {
+            float: right;
+            clear: right;
+            width: 15%;
+            height: 165px;
+            border: 5px solid darkolivegreen;
+            border-radius: 35px;
+        }
+
+        .imgson img {
+            float: left;
+            width: 3%;
+            height: 5px 5px;
+            padding: 2px;
+            border: 5px solid darkolivegreen;
+            border-radius: 153px;
+        }
+
+        .imgdaughter img {
+            float: left;
+            clear: both;
+            width: 3%;
+            height: 5px 5px;
+            padding: 2px;
+            border: 5px solid darkolivegreen;
+            border-radius: 153px;
+        }
+
+        #parapapa {
+            float: right;
+            width: 80%;
+            border: 5px solid cyan;
+            border-radius: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            margin: auto;
+            padding: 15px;
+            text-shadow: 10px 6px 4px #f58093;
+            font: 2.5em Roboto, Helvetica, sans-serif;
+            font-family: cursive;
+            font-weight: xx-large;
+            text-align: center;
+            color: red;
+        }
+
+        P6 {
+            margin: auto;
+            height: 20px;
+            padding: 213px;
+            text-shadow: 5px 3px 2px #8963f3;
+            font: 1.5em Roboto, Helvetica, sans-serif;
+            font-family: cursive;
+            font-weight: 300;
+            text-align: right;
+            color: rgb(20, 7, 77);
+        }
+
+        h2 {
+            width: 580px;
+            margin: auto;
+            height: 120px 25px;
+            border: 5px solid rgb(243, 187, 187);
+            border-radius: 33px;
+            text-decoration: rgb(241, 238, 238);
+            padding: 3px;
+            background-color: rgb(245, 199, 199);
+            text-decoration-color: blue;
+            font-family: monospace;
+            font-size: xx-large;
+            text-align: center;
+            color: rgb(56, 31, 3);
+        }
+
+        h3 {
+            text-align: center;
+            color: green;
+            width: 54rem;
+            margin: 5px;
+            border: 3px solid rgb(238, 230, 160);
+            border-radius: 53px;
+            text-decoration: rgb(241, 238, 238);
+            padding: 5px;
+            background-color: rgb(245, 199, 199);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: 700;
+        }
+
+        h5 {
+            width: 600px;
+            margin: auto;
+            height: 120px 25px;
+            padding: 5px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: large;
+            border-radius: 33px;
+            background-color: rgb(243, 213, 213);
+            text-align: center;
+            color: rgb(123, 19, 241);
+        }
+
+        p {
+            text-align: center;
+            border: 3px;
+            width: 880px;
+            margin: auto;
+            border: 5px solid rgb(205, 240, 235);
+            border-radius: 33px;
+            font-style: oblique;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            display: inline-block;
+            padding: 3px;
+            vertical-align: text-top;
+            background-color: rgb(245, 199, 199);
+            font-weight: 600;
+            color: blueviolet;
+        }
+
+        p1 {
+            text-align: center;
+            border: 3px solid 2px;
+            border-radius: 2px;
+            color: blue;
+            width: 877px;
+            margin: auto;
+            border: 5px solid rgb(240, 206, 206);
+            border-radius: 33px;
+            background-color: rgb(247, 115, 115);
+            font-style: oblique;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            display: inline-block;
+            padding: 6px;
+            vertical-align: text-top;
+        }
+
+        p2 {
+            text-align: center;
+            border: 3px solid 2px;
+            border-radius: 2px;
+            color: darkred;
+            width: 877px;
+            margin: auto;
+            border: 5px solid rgb(57, 118, 233);
+            border-radius: 33px;
+            background-color: rgba(192, 214, 226, 0.952);
+            font-style: inherit;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            display: inline-block;
+            padding: 6px;
+            vertical-align: text-top;
+        }
+
+        p4 {
+            margin: 550px;
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="family">
+        <marquee direction="down" height="55" width="900" behavior="scroll" scrollamount="5">
+            <h1>WELCOME TO MY FAMILY</h1>
+        </marquee>
+        <marquee direction="up" height="55" width="900" behavior="scroll" scrollamount="5">
+            <h1>WELCOME TO MY FAMILY</h1>
+        </marquee>
+        <div class="imgpm">
+            <img src="https://user-images.githubusercontent.com/106741114/171988499-e3f9f878-eac7-4efc-abf7-457b287a27fc.jpeg"
+                alt="Papa Mammy">
+            <div class="imgpm1">
+                <img src="..\img\rps.jpg" alt="rps">
+            </div>
+        </div>
+        <div class="parapapa">
+            <h2>Late Sri Rampal Srivastava </h2>
+            <h3>(02 January 1933 - 17 November 2009 )</h3>
+            <h5>S/O Late Sri Mishri Lal Srivastava & Smt Laungsri Srivastava</h5>
+            <h2>Late Smt Krishna Srivastava</h2>
+            <h3>Married on 29 june 1955</h3>
+            <p>We are 05 Son & 04 Daughter OF Our Parents. Details of them is as under</p>
+            <br><br>
+
+        </div>
+        <div id="son" class="first">
+            <div class="imgpapa">
+                <img src="https://user-images.githubusercontent.com/106741114/171988630-7c2a3ff6-15ca-4021-93e6-7badf51754bd.jpeg"
+                    alt="Manoj">
+                <div class="imgpapa1">
+                    <img src="..\img\kanak.jpeg" alt="kanak">
+                </div>
+            </div>
+            <div class="parapapa">
+                <h3>Late Sri Manoj Kumar Srivastava | Birth : 17 March</h3>
+                <h3>Smt Kanak Srivastava | Birth : 30 October</h3>
+                <h3>Date of Maarriage : 14 December</h3>
+                <div class="imgson">
+                    <marquee direction="up" height="50" width="900" behavior="scroll" scrollamount="2" vspace="">
+                        <img src="..\img\manu.jpeg" alt="manu">
+                        <P1> SON : Mr.Prakhar Srivastava | Birth Date : 26 November </P1>
+                    </marquee>
+                </div>
+                <div class="imgdaughter">
+                    <marquee direction="UP" height="50" width="900" behavior="scroll" scrollamount="2" vspace="">
+                        <img src="..\img\kado.jpeg" alt="kado">
+                        <P2> Daughter : Mrs.Pragati Srivastava | Birth Date : 06 January</P2>
+                    </marquee>
+                </div>
+            </div>
+        </div>
+        <div id="daughter" class="second">
+            <div class="imgpapa">
+                <img src="https://user-images.githubusercontent.com/106741114/171989011-34abd11f-f2fc-4fa7-9bf1-0cfe0b72447e.jpg"
+                    alt="Manjari">
+                <div class="imgpapa1">
+                    <img src="..\img\agni.jpg" alt="agni">
+                </div>
+            </div>
+            <div class="parapapa">
+                <h3>Smt Manjari Srivastava | Birth : 28 February</h3>
+                <h3> Sri Agni Khare | Birth 15 December </h3>
+                <h3>Date of Marriage : 02 December</h3>
+                <div class="imgdaughter">
+                    <marquee direction="up" height="50" width="900" behavior="scroll" scrollamount="2" vspace="">
+                        <img src="..\img\kado.jpeg" alt="kado">
+                        <P2> Daughter : Km.Prachi Khare | Birth Date : 03 July</P2>
+                    </marquee>
+                </div>
+                <div class="imgdaughter">
+                    <marquee direction="up" height="50" width="900" behavior="scroll" scrollamount="2" vspace="">
+                        <img src="..\img\kado.jpeg" alt="kado">
+                        <P2> Daughter : Km Manshi Khare | Birth Date : 02 January</P2>
+                    </marquee>
+                </div>
+                <div class="imgson">
+                    <marquee direction="up" height="50" width="900" behavior="scroll" scrollamount="2" vspace="">
+                        <img src="..\img\manu.jpeg" alt="manu">
+                        <P1> SON : Mr.Kishan Khare | Birth Date : 23 August </P1>
+                    </marquee>
+                </div>
+            </div>
+        </div>
+        <div id="daughter" class="second">
+            <div class="imgpapa">
+                <img src="https://user-images.githubusercontent.com/106741114/171988628-ae555cd1-995c-4bf7-85ce-fe964eaacca3.jpg"
+                    alt="Manjul">
+                <div class="imgpapa1">
+                    <img src="..\img\sukirti.jpg" alt="sukirti">
+                </div>
+            </div>
+            <div class="parapapa">
+                <h3>Smt Manjul Srivastava | Birth : 28 November</h3>
+                <h3>Sri Sukriti Srivastava | Birth : 17 October</h3>
+                <h3>Date of Marriage : 15 December</h3>
+                <div class="imgson">
+                    <div class="imgson">
+                        <marquee direction="up" height="50" width="900" behavior="scroll" scrollamount="2" vspace="">
+                            <img src="..\shat.jpg" alt="shat">
+                            <P1> SON : Mr.Shiddhrath Srivastava | Birth Date : 19 October </P1>
+                        </marquee>
+                    </div>
+                </div>
+                <div class="imgdaughter">
+                    <marquee direction="up" height="50" width="900" behavior="scroll" scrollamount="2" vspace="">
+                        <img src="..\img\kado.jpeg" alt="kado">
+                        <P2> Daughter : Km.Gautami Srivastava | Birth Date : 14 May</P2>
+                    </marquee>
+                </div>
+            </div>
+            <div id="son" class="first">
+                <div class="imgpapa">
+                    <img src="https://user-images.githubusercontent.com/106741114/171988617-6eee23d3-5030-4503-9698-0cb043ceb1c6.jpeg"
+                        alt="Madhup">
+                    <div class="imgpapa1">
+                        <img src="..\img\radha.jpeg" alt="radha">
+                    </div>
+                </div>
+                <div class="parapapa">
+                    <h3>Sri Madhup Kumar Srivastava | Birth : 30 June</h3>
+                    <h3>Smt Radha Srivastava | Birth : 27 August</h3>
+                    <h3>Date of Marriage : 12 November</h3>
+                    <P4>......</P4>
+                    <P4>......</P4>
+                    <P4>......</P4>
+                    <P4>......</P4>
+                </div>
+            </div>
+            <div id="son" class="first">
+                <div class="imgpapa">
+                    <img src="https://user-images.githubusercontent.com/106741114/171988618-01c6a9b8-6b83-4552-8bbf-de6e185e97eb.jpg"
+                        alt="Madhur">
+                    <div class="imgpapa1">
+                        <img src="..\img\archana.jpg" alt="archana">
+                    </div>
+                </div>
+                <div class="parapapa">
+                    <h3>Sri Madhur Kumar Srivastava | Birth : 17 January</h3>
+                    <h3>Smt Archana Srivastava | Birth : 25 October</h3>
+                    <h3>Date of Marriage : 27 February</h3>
+                    <div class="imgson">
+                        <marquee direction="up" height="50" width="900" behavior="scroll" scrollamount="2" vspace="">
+                            <img src="..\samya.jpg" alt="samya">
+                            <P1> SON : Mr.Samya Srivastava D.O.B. 20 December </P1>
+                        </marquee>
+                    </div>
+                    <div class="imgson">
+                        <marquee direction="up" height="50" width="900" behavior="scroll" scrollamount="2" vspace="">
+                            <img src="..\siddharth.jpg" alt="siddharth">
+                            <P1> SON : Mr.Saksham Srivastava | Birth Date : 04 July</P1>
+                        </marquee>
+                    </div>
+                </div>
+            </div>
+            <div id="daughter" class="second">
+                <div class="imgpapa">
+                    <img src="https://user-images.githubusercontent.com/106741114/171988619-d97874cc-9068-435c-ae2f-d2301b14d091.jpg"
+                        alt="Mamta">
+                    <div class="imgpapa1">
+                        <img src="..\img\shyamji.jpg" alt="shyamji">
+                    </div>
+                </div>
+                <div class="parapapa">
+                    <h3>Smt Mamta Srivastava | Birth : 14 January</h3>
+                    <h3>Sri Shyam Ji Ashthana | Birth : 09 September</h3>
+                    <h3>Date of Marriage : 10 December</h3>
+                    <div class="imgdaughter">
+                        <marquee direction="up" height="50" width="900" behavior="scroll" scrollamount="2" vspace="">
+                            <img src="..\img\kado.jpeg" alt="kado">
+                            <P2> Daughter : Km.Vaishnavi Ashthana | Birth Date : 03 December</P2>
+                        </marquee>
+                    </div>
+                </div>
+            </div>
+            <div id="son" class="first">
+                <div class="imgpapa">
+                    <img src="https://user-images.githubusercontent.com/106741114/171988632-ac9ab806-8835-456c-a9db-c00779bd4cff.jpg"
+                        alt="Mukesh">
+                    <div class="imgpapa1">
+                        <img src="..\img\anju.jpg" alt="anju">
+                    </div>
+                </div>
+                <div class="parapapa">
+                    <h3>Sri Mukesh Kumar Srivastava | Birth : 18 December</h3>
+                    <h3>Smt Anju Srivastava | Birth : 15 August</h3>
+                    <h3>Date of Marriage : 23 April</h3>
+                    <div class="imgdaughter">
+                        <marquee direction="up" height="50" width="900" behavior="scroll" scrollamount="2" vspace="">
+                            <img src="..\img\kado.jpeg" alt="kado">
+                            <P2> Daughter : Km.Vidhika Srivastava | Birth Date : 12 August</P2>
+                        </marquee>
+                    </div>
+                    <div class="imgdaughter">
+                        <marquee direction="up" height="50" width="900" behavior="scroll" scrollamount="2" vspace="">
+                            <img src="..\img\kado.jpeg" alt="kado">
+                            <P2> Daughter : Km.Ishika Srivastava | Birth Date : 18 May</P2>
+                        </marquee>
+                    </div>
+                </div>
+            </div>
+            <div id="daughter" class="second">
+                <div class="imgpapa">
+                    <img src="https://user-images.githubusercontent.com/106741114/171988620-04f29000-c5ad-453c-bef1-4fa174b5b0c9.jpeg"
+                        alt="Manila">
+                    <div class="imgpapa1">
+                        <img src="..\img\kc.jpeg" alt="kc">
+                    </div>
+                </div>
+                <div class="parapapa">
+                    <h3>Smt Manila Srivastava | Birth : 13 September</h3>
+                    <h3>Sri Krishna Chand Srivastava | Birth : 30 August</h3>
+                    <h3>Date of Marriage : 20 June</h3>
+                    <div class="imgson">
+                        <div class="imgson">
+                            <marquee direction="up" height="50" width="900" behavior="scroll" scrollamount="2"
+                                vspace="">
+                                <img src="..\kanha.jpg" alt="kanha">
+                                <P1> SON : Mr.Kanha Srivastava | Birth Date : 30 August</P1>
+                            </marquee>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="son" class="first">
+                <div class="imgpapa">
+                    <img src="https://user-images.githubusercontent.com/106741114/171988621-63d4a9ae-93ed-42aa-b9e8-6b91d4e1cfad.jpeg"
+                        alt="Manish">
+                    <div class="imgpapa1">
+                        <img src="..\img\poonam.jpeg" alt="poonam">
+                    </div>
+                </div>
+                <div class="parapapa">
+                    <h3>Sri Manish Kumar Srivastava | Birth : 29 October</h3>
+                    <h3>Smt Poonam Srivastava | Birth : 29 June</h3>
+                    <h3>Date of Marriage : 07 February</h3>
+                    <div class="imgdaughter">
+                        <marquee direction="up" height="50" width="900" behavior="scroll" scrollamount="2" vspace="">
+                            <img src="..\img\kado.jpeg" alt="kado">
+                            <P2> Daughter : Km.Lavanya Srivastava | Birth Date : 13 October</P2>
+                        </marquee>
+                    </div>
+
+                </div>
+            </div>
+            <div class="imgdaughter">
+                <P6>Designed & Developed By :</P6><br>
+                <P6>Mukesh Kumar Srivastava</P6>
+            </div>
+</body>
+
+</html>
